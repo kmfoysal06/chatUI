@@ -9,19 +9,77 @@
 </head>
 <body>
     <main>
-        <div class="chat-header">
-            <img src="https://placehold.co/100" alt="" width="40px">
-            <p>KMFOYSAL06</p>
-        </div>
-        <div class="messages">
-            <div class="self-message">
-                <p>Hello</p>
-            </div>
-        </div>
-    <form class="message-form">
-        <input type="text" class="message-text" required>
-        <input type="submit" value="🚀" class="send_btn">
-    </form>
+	<section>
+		<div class="container">
+			<div class="chat-header">
+				<div class="user-image">
+					<h3 class="chat-user-character">C</h3>
+					<span class="close-chat-header">
+						<svg width="22" height="22"><use href="#chat-header-close"></use></svg>
+					</span>
+				</div>
+				<div class="user-meta">
+					<h3>ChatFlow</h3>
+					<p>A live chat interface that allows for seamless, natural communication and connection.</p>
+				</div>
+
+			</div>
+			<div class="chat-body">
+				<div class="chat-body-inner">
+					<div class="self-msg single-message">
+						<p>Hello, how are you doing?</p>
+					</div>
+					<div class="single-message-container">
+						<div class="single-message-inner">
+							<img src="https://avatars.githubusercontent.com/u/95936171" />
+							<div class="single-message-meta">
+								<h3>CorpseChat</h3>
+								<div class="single-message">
+									<p>I'm doing well, thank you! How can I help you today?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="self-msg single-message">
+						<p>I have a question about the return policy for a product I purchased.</p>
+					</div>
+					<div class="single-message-container">
+						<div class="single-message-inner">
+							<img src="https://avatars.githubusercontent.com/u/95936171" />
+							<div class="single-message-meta">
+								<h3>CorpseChat</h3>
+										<div class="single-message loading">
+											<span></span>
+											<span></span>
+											<span></span>
+										</div>
+							</div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+			<div class="chat-actions">
+				<div class="chat-actions-inner">
+					<input type="text" class="input-message" placeholder="Reply..."/>
+							<button class="btn send-btn"><svg width="20" height="20"><use href="#chat-send"></use></svg></button>
+				</div>
+			</div>
+		</div>
+	</section>
     </main>
+
+
+	<div class="svgs" style="display:none;">
+		<svg id="chat-header-close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+			<path d="M18 6L6 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+			<path d="M6 6L18 18" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+		<svg id="chat-send" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+			<path d="M9 18L15 12L9 6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+	</div>
 </body>
 </html>
