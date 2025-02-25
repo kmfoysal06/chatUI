@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans 3";
 }
 
 :root {
@@ -13,6 +13,22 @@
    --msg-bg: #F1F7FF;
    --chat-bubble-bg: #C7DFFF;
    --chat-input-color: rgba(13,8,44,0.6);
+}
+
+/**
+ * Load Fonts*/
+/* source-sans-3-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Source Sans 3';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/source-sans-3-v15-latin-regular.eot'); /* IE9 Compat Modes */
+  src: url('../fonts/source-sans-3-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/source-sans-3-v15-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+       url('../fonts/source-sans-3-v15-latin-regular.woff') format('woff'), /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+, iOS 5+ */
+       url('../fonts/source-sans-3-v15-latin-regular.ttf') format('truetype'), /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+       url('../fonts/source-sans-3-v15-latin-regular.svg#SourceSans3') format('svg'); /* Legacy iOS */
 }
 
 main {
