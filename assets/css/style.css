@@ -227,4 +227,5 @@ main {
 	height: 40px;
 	border-top-right-radius: 0.125rem;
 	border-bottom-right-radius: 0.124rem;
+	cursor: pointer;
 }
