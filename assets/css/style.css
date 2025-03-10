@@ -111,17 +111,20 @@ main {
 	font-weight: 400;
 	line-height: 28px;
 }
-
 .chat-body {
-	display: grid;
-	grid-template-columns: 30px 1fr 30px;
-	padding-block: 30px;
-}
-
+    display: grid;
+    grid-template-columns: 30px 1fr 30px;
+    padding-block: 30px;
+    height: 45vh;
+  }
 .chat-body-inner {
 	grid-column: 2/3;
 	display: grid;
 	row-gap: 35px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  scroll-snap-type: y proximity;
+  overscroll-behavior-y: contain;
 }
 
 .single-message {
@@ -131,7 +134,12 @@ main {
 	border-top-left-radius: 0;
 	color: var(--msg-text-color);
 	background: var(--msg-bg);
+  height: fit-content;
 }
+.single-message:last-child {
+scroll-snap-align: end;
+}
+
 
 .single-message.loading {
 	display: flex;
@@ -208,7 +216,7 @@ main {
 	color: var(--chat-input-color);
 	font-size: 1rem;
 	letter-spacing: 0;
-	caret-color: #000;
+	caret-color: #fff;
 	box-shadow: var(--chat-input-shadow);
 	padding: 0.5rem;
 	background: var(--chat-bg);
